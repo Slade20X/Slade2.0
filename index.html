@@ -125,6 +125,24 @@ body {
     position: relative;
 }
 
+    .link-button::before {
+      content: "";
+      position: absolute; top: 0; right: 0;
+      width: 45%; height: 100%;
+      background-size: cover; background-position: center;
+      opacity: 0.45;
+      mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .link-button.g4skins::before {
+      background-image: url('https://i.imgur.com/VRJ2yMd.png');
+    }
+    .link-button.betclic::before {
+      background-image: url('https://i.imgur.com/4vcoTmq.png')
+     }
 
 .link-button:hover {
     background: rgba(0, 0, 0, 0.2); 
