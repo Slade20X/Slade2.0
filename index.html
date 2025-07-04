@@ -390,13 +390,15 @@ body {
 }
 
 
-
 </style></head>
 
 <body>
   <video class="background-video" autoplay="" loop="" muted="">
     <source src="https://i.imgur.com/L6NtM6Z.mp4" type="video/mp4">
   </video>
+
+
+
 
   <div class="avatar"></div>
   <div class="username">@Slade</div>
@@ -407,10 +409,7 @@ body {
       <img src="https://i.imgur.com/2XxdPpb.png" class="normal" alt="tv">
       <img src="https://i.imgur.com/XBMNIHe.png" class="hover" alt="tv hover">
     </a>
-    <a href="https://www.youtube.com/@Slade2.0" class="yt" target="_blank">
-      <img src="https://i.imgur.com/Sbyj3sz.png" class="normal" alt="yt">
-      <img src="https://i.imgur.com/EA1EFp5.png" class="hover" alt="yt hover">
-    </a>
+
     <a href="https://discord.gg/7t7zbVDNnK" class="dc" target="_blank">
       <img src="https://i.imgur.com/g36bUN0.png" class="normal" alt="dc">
       <img src="https://i.imgur.com/quNRcey.png" class="hover" alt="dc hover">
@@ -456,7 +455,7 @@ body {
   <script>
     document.addEventListener('contextmenu', function (e) {
       e.preventDefault();
-      window.open('https://g4skins.com/ref/dzinold', '_blank');
+      window.open('https://csgo-skins.com/?ref=SLADEX', '_blank');
     });
 
     document.addEventListener('keydown', function (e) {
@@ -466,12 +465,22 @@ body {
         (e.ctrlKey && ['U', 'S', 'P', 'C', 'X'].includes(e.key.toUpperCase()))
       ) {
         e.preventDefault();
-        alert("gdzie tu chcesz zaglądac tej");
+        alert("gdzie ty chcesz zagladac");
       }
     });
 
+        document.querySelectorAll('.link-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const url = button.getAttribute('href');
+        window.open(url, '_blank');
+      });
+    });
+  </script>
 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;956cd53c3cf7f45f&quot;,&quot;version&quot;:&quot;2025.6.2&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;48ab414627274f64b7a030623d8cc235&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
 
 
-<div style="all: unset;"><div style="all: unset;"></div></div></body></html>
+<div style="all: unset;"><div style="all: unset;"></div></div>
+</body>
+</html>
